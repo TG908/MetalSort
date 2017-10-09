@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22B72C711F695A8E008224ED /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B72C701F695A8E008224ED /* main.swift */; };
+		22B72C7A1F695B7D008224ED /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 22B72C791F695B7D008224ED /* Shader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		22B72C6D1F695A8E008224ED /* MetalSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MetalSort; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B72C701F695A8E008224ED /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		22B72C791F695B7D008224ED /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				22B72C701F695A8E008224ED /* main.swift */,
+				22B72C791F695B7D008224ED /* Shader.metal */,
 			);
 			path = MetalSort;
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B72C7A1F695B7D008224ED /* Shader.metal in Sources */,
 				22B72C711F695A8E008224ED /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
