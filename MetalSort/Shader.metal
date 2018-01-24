@@ -12,7 +12,7 @@ using namespace metal;
 typedef int DataType;
 
 
-kernel void parallelBitonic(device int *input [[buffer(0)]],
+kernel void parallelBitonic(device DataType *input [[buffer(0)]],
                             constant int &p [[buffer(1)]],
                             constant int &q [[buffer(2)]],
                             uint gid [[thread_position_in_grid]])
