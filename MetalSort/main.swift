@@ -16,7 +16,7 @@ let library = device.makeDefaultLibrary()!
 let sortFunction = library.makeFunction(name: "parallelBitonic")!
 let pipeline = try! device.makeComputePipelineState(function: sortFunction)
 
-var data: [DataType] = [16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]
+var data: [DataType] = [435,15,14,20,345,11,100,9,8,7,6,5,9,3,2,0]
 let dataBuffer = device.makeBuffer(bytes: &data, length: MemoryLayout<DataType>.stride * data.count, options: [.storageModeShared])!
 
 let threadgroupsPerGrid = MTLSize(width: data.count, height: 1, depth: 1)
